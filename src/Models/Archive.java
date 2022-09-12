@@ -44,4 +44,8 @@ public class Archive {
     public void setMark(Mark mark) {
         this.mark = mark;
     }
+
+    public void addRecord(){
+        System.out.println("The archive record was added");
+    }
 }

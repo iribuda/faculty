@@ -8,13 +8,13 @@ public class Course {
     private String title;
     private ArrayList<Student> students;
     private Subject subject;
-    private ArrayList<Educator> educators;
+    private Educator educator;
 
-    public Course(String name, ArrayList<Student> students, Subject subject, ArrayList<Educator> educators) {
+    public Course(String name, ArrayList<Student> students, Subject subject, Educator educator) {
         this.title = name;
         this.students = students;
         this.subject = subject;
-        this.educators = educators;
+        this.educator = educator;
     }
 
     public int getId() {
@@ -49,12 +49,20 @@ public class Course {
         this.subject = subject;
     }
 
-    public ArrayList<Educator> getEducators() {
-        return educators;
+    public Educator getEducator() {
+        return educator;
     }
 
-    public void setEducators(ArrayList<Educator> educators) {
-        this.educators = educators;
+    public void setEducator(Educator educator) {
+        this.educator = educator;
+    }
+
+    public void confirm(){
+        System.out.println("Student's enroll was confirmed");
+    }
+
+    public void completeCourse(){
+        System.out.println("The course was completed");
     }
 }
 

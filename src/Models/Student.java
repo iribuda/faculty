@@ -1,11 +1,12 @@
 package Models;
 
-public class Student {
+public class Student extends User{
     private int age;
-    private int mobileNumber;
+    private String mobileNumber;
     private String address;
 
-    public Student(int age, int mobileNumber, String address) {
+    public Student(String fName, String lName, String email, String password, int age, String mobileNumber, String address) {
+        super(fName, lName, email, password);
         this.age = age;
         this.mobileNumber = mobileNumber;
         this.address = address;
@@ -19,11 +20,11 @@ public class Student {
         this.age = age;
     }
 
-    public int getMobileNumber() {
+    public String getMobileNumber() {
         return mobileNumber;
     }
 
-    public void setMobileNumber(int mobileNumber) {
+    public void setMobileNumber(String mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
 
@@ -34,4 +35,10 @@ public class Student {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public void enroll(){
+        System.out.println("The student is enrolling ...");
+    }
+
+    public void startStudyingProcess(){}
 }

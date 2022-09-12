@@ -28,10 +28,10 @@ public class Educator extends User{
     }
 
     public void addCourse(){
-
+        System.out.println("New Course was added");
     }
 
-    public void addMark(){
-
+    public void giveMark(){
+        System.out.printf("The mark was given to the student");
     }
 }

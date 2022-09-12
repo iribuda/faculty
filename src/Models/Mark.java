@@ -1,8 +1,8 @@
 package Models;
 
-public enum Mark {
-    EXCELLENT ,
-    GOOD ,
-    SATISFACTORY,
-    BAD
-}
+    public enum Mark {
+        EXCELLENT ,
+        GOOD ,
+        SATISFACTORY,
+        BAD
+    }
