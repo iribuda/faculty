@@ -13,6 +13,22 @@ public class Archive {
         this.mark = mark;
     }
 
+    public int getId() {
+        return Id;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public Mark getMark() {
+        return mark;
+    }
+
     public void setId(int id) {
         Id = id;
     }

@@ -1,7 +1,7 @@
 package Models;
 
 public class Educator extends User{
-    private int Id;
+
     private String description;
     private String experience;
 
@@ -11,22 +11,12 @@ public class Educator extends User{
         this.experience=experience;
     }
 
-    @Override
-    public int getId() {
-        return Id;
-    }
-
     public String getDescription() {
         return description;
     }
 
     public String getExperience() {
         return experience;
-    }
-
-    @Override
-    public void setId(int id) {
-        Id = id;
     }
 
     public void setDescription(String description) {
